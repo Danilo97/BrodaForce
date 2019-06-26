@@ -1,0 +1,14 @@
+@media (max-width:580px){
+
+    .imgSize figure img{
+        border-radius:50%;
+        height:400px;
+    }
+}
+@media (max-width:470px){
+
+    .imgSize figure img{
+        border-radius:50%;
+        height:200px;
+    }
+}

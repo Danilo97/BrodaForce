@@ -1,0 +1,1869 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Inconsolata', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fab {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/*ZA MAIN STRANU*/
+body a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#ChooseSide {
+  background-image: url("../images/background2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#ChooseSide h1 {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 200px;
+}
+
+#ChooseSide h2 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+#ChooseSide .row {
+  margin-right: 0px !important;
+}
+
+#ChooseSide .row button {
+  background: #96282B;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  -webkit-animation-name: up;
+          animation-name: up;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  position: relative;
+}
+
+@-webkit-keyframes up {
+  from {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+#ChooseSide .row button:hover {
+  background: transparent;
+  color: #96282B;
+}
+
+#ChooseSide .row button:before, #ChooseSide .row button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #96282B;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+#ChooseSide .row button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+#ChooseSide .row button:hover:before, #ChooseSide .row button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+#ChooseSide .row #light {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+#ChooseSide .row #light:hover {
+  background: transparent;
+  color: rgba(59, 107, 183, 0.7);
+}
+
+#ChooseSide .row #light:before, #ChooseSide .row #light:after {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+/*ZA MAIN STRANU END*/
+/*DARK SIDE STRANA*/
+.sidenavDark {
+  background-color: #2F0706 !important;
+}
+
+.sidenavDark li a {
+  color: #fff !important;
+  font-size: 17px !important;
+}
+
+.brand-logo {
+  margin-left: 20px !important;
+}
+
+.nav-wrapper {
+  background-color: #2F0706;
+}
+
+.main {
+  background-image: url("../images/dark/main.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.main h1 {
+  margin-top: 60px;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.main h1 label {
+  color: #760905;
+  font-size: 1em;
+}
+
+.main h2, .main p {
+  margin-top: -5px !important;
+}
+
+.main p {
+  font-size: 25px;
+  margin-bottom: 30px !important;
+}
+
+.main button {
+  background: #96282B;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  -webkit-animation-name: up;
+          animation-name: up;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.main button:hover {
+  background: transparent;
+  color: #96282B;
+}
+
+.main button:before, .main button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #96282B;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.main button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.main button:hover:before, .main button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.main #light {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+.main #light:hover {
+  background: transparent;
+  color: rgba(59, 107, 183, 0.7);
+}
+
+.main #light:before, .main #light:after {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+.main .row {
+  margin-right: 0px !important;
+}
+
+.fanArt {
+  padding-top: 5%;
+}
+
+.fanArt h3 {
+  font-size: 3em;
+  color: #391320;
+  margin-bottom: 30px;
+}
+
+.fanArt h3 label {
+  border-bottom: 2px solid #760905;
+  font-size: 1em;
+  color: #391320;
+}
+
+.fanArt p {
+  margin: 20px 0px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.fanArt img {
+  border-radius: 5px;
+}
+
+.fanArt button {
+  background: #760905;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+}
+
+.fanArt button:hover {
+  background: transparent;
+  color: #760905;
+}
+
+.fanArt button:before, .fanArt button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #760905;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.fanArt button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.fanArt button:hover:before, .fanArt button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.fanArt #lightFix {
+  background-color: #20408D !important;
+}
+
+.fanArt #lightFix:hover {
+  color: #20408D !important;
+}
+
+.fanArt #lightFix:before, .fanArt #lightFix:after {
+  background-color: #20408D !important;
+}
+
+.sithAcademy {
+  padding-top: 5%;
+}
+
+.sithAcademy h3 {
+  font-size: 3em;
+  color: #391320;
+  margin-bottom: 30px;
+}
+
+.sithAcademy h3 label {
+  border-bottom: 2px solid #760905;
+  font-size: 1em;
+  color: #391320;
+}
+
+.sithAcademy p {
+  margin: 20px 0px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.sithAcademy img {
+  border-radius: 5px;
+}
+
+.sithAcademy button {
+  background: #760905;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+}
+
+.sithAcademy button:hover {
+  background: transparent;
+  color: #760905;
+}
+
+.sithAcademy button:before, .sithAcademy button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #760905;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.sithAcademy button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.sithAcademy button:hover:before, .sithAcademy button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.sithAcademy #lightFix {
+  background-color: #20408D !important;
+}
+
+.sithAcademy #lightFix:hover {
+  color: #20408D !important;
+}
+
+.sithAcademy #lightFix:before, .sithAcademy #lightFix:after {
+  background-color: #20408D !important;
+}
+
+.sliderDark {
+  margin-bottom: 30px;
+}
+
+.sliderDark .indicator-item {
+  background-color: #96282B !important;
+}
+
+.sliderDark .active {
+  background-color: #391320 !important;
+}
+
+/*FOOTER*/
+.page-footer {
+  background-color: #760905 !important;
+}
+
+.footer-copyright {
+  background-color: #2F0706 !important;
+}
+
+/*FOOTER END*/
+/*SITH ACADEMY PAGE*/
+.sithAcademy {
+  /* label underline focus color */
+}
+
+.sithAcademy h1 {
+  font-size: 3em;
+  color: #391320;
+  margin-bottom: 70px;
+}
+
+.sithAcademy h1 label {
+  border-bottom: 2px solid #760905;
+  font-size: 1em;
+  color: #391320;
+}
+
+.sithAcademy h2 {
+  font-size: 2em;
+}
+
+.sithAcademy h2 label {
+  border-bottom: 2px solid #760905;
+  font-size: 1em;
+  color: #000;
+}
+
+.sithAcademy .input-field {
+  margin-top: -15px !important;
+}
+
+.sithAcademy .input-field input:focus {
+  border-bottom: 1px solid #760905 !important;
+  -webkit-box-shadow: 0 1px 0 0 #760905 !important;
+          box-shadow: 0 1px 0 0 #760905 !important;
+}
+
+.sithAcademy .input-field input:focus + label {
+  color: #760905 !important;
+}
+
+/*SITH ACADEMY PAGE END*/
+/*SITH PRODUCTS PAGE*/
+.bestSelling {
+  background-image: url("../images/dark/wDark.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 91vh;
+  padding-top: 5%;
+}
+
+.bestSelling button {
+  background: #760905;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+}
+
+.bestSelling button:hover {
+  background: transparent;
+  color: #760905;
+}
+
+.bestSelling button:before, .bestSelling button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #760905;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.bestSelling button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.bestSelling button:hover:before, .bestSelling button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.bestSelling #lightFix {
+  background-color: #20408D !important;
+}
+
+.bestSelling #lightFix:hover {
+  color: #20408D !important;
+}
+
+.bestSelling #lightFix:before, .bestSelling #lightFix:after {
+  background-color: #20408D !important;
+}
+
+.bestSelling button:hover {
+  color: #fff;
+}
+
+.bestSelling .imgPosition {
+  padding-left: 5%;
+}
+
+.bestSelling .textPosition {
+  margin-top: 5%;
+  padding-right: 5%;
+}
+
+.products h2 {
+  font-size: 3em;
+  color: #391320;
+}
+
+.products h2 label {
+  border-bottom: 2px solid #760905;
+  font-size: 1em;
+  color: #391320;
+}
+
+.products .d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products .align-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.products .flex-centerY-centerX {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .wrapper {
+  height: 100%;
+}
+
+.products .product .pageInner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.products .wrapper {
+  width: 360px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  .products .wrapper {
+    width: 100%;
+  }
+}
+
+.products .wrapper:hover .hBg {
+  left: 0px;
+}
+
+.products .wrapper:hover .price {
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #818181;
+}
+
+.products .wrapper:hover .addToCart {
+  left: 50%;
+}
+
+.products .wrapper:hover .img {
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+  opacity: 0.4;
+}
+
+.products .wrapper:hover .infoInner {
+  bottom: 155px;
+}
+
+.products .wrapper:hover .aSize {
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.products .wrapper .boxDown {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.products .wrapper .boxUp {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.products .wrapper .img {
+  padding: 20px 0;
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+}
+
+.products .hBg {
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  width: 660px;
+  height: 100%;
+  background-color: #96282B;
+  position: absolute;
+  left: -659px;
+}
+
+.products .hBg .hBgInner {
+  width: 50%;
+  height: 100%;
+  background-color: #760905;
+}
+
+.products .infoInner {
+  -webkit-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}
+
+.products .infoInner .pName,
+.products .infoInner .pCompany {
+  display: block;
+}
+
+.products .infoInner .pName {
+  font-size: 18px;
+  color: #252525;
+}
+
+.products .infoInner .pCompany {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8c8c8c;
+}
+
+.products .aSize {
+  -webkit-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  color: #828282;
+  opacity: 0;
+}
+
+.products .aSize .size {
+  color: #252525;
+}
+
+.products .cart {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+}
+
+.products .cart .price {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #252525;
+}
+
+.products .cart .addToCart {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.products .cart .addToCart .txt {
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*SITH PRODUCTS PAGE END*/
+/*FAN ART PAGE*/
+.FanArt h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.FanArt h1 label {
+  color: #760905;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.FanArt h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.FanArt h2 label {
+  color: #760905;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.FanArt h3 {
+  font-size: 3em;
+  color: #000;
+}
+
+.FanArt h3 label {
+  font-size: 1em;
+  color: #000;
+  border-bottom: 2px solid #760905;
+}
+
+.FanArt p {
+  margin: 5% 0px 10px 0px;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.FanArt .fas {
+  font-size: 3em;
+  color: #760905;
+  margin-top: 10px;
+}
+
+.FanArt .fas:hover {
+  color: #96282B;
+}
+
+.FanArt .bgColor {
+  background-image: url("../images/dark/fanBg.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10%;
+}
+
+.FanArt .zIindex {
+  z-index: 5;
+  margin: -60px 5px 0px 0px;
+}
+
+.FanArt .art {
+  margin-bottom: 30px;
+}
+
+.FanArt .art img {
+  border-radius: 5px !important;
+}
+
+.FanArt .modal {
+  height: auto;
+}
+
+.FanArt .modal p {
+  color: #000 !important;
+}
+
+.FanArt .modal .btnStyle {
+  background-color: #2F0706 !important;
+  color: #fff;
+}
+
+.FanArt .modal .modal-content {
+  border: none;
+}
+
+.FanArt .modal .btnStyle:hover {
+  background-color: #760905 !important;
+}
+
+.FanArt .modal .far:hover {
+  color: #760905;
+}
+
+/*FAN ART PAGE END*/
+/*DARK SIDE STRANA END*/
+/*LIGHT SIDE STRANA*/
+.sidenavLight {
+  background-color: #20408D !important;
+}
+
+.sidenavLight li a {
+  color: #fff !important;
+  font-size: 17px !important;
+}
+
+.wrap-color {
+  background-color: #3B6BB7 !important;
+}
+
+.main-light {
+  background-image: url("../images/light/mainImg.jpg");
+  background-position: center;
+}
+
+.main-light h1 {
+  margin-top: 60px;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.main-light h1 label {
+  color: rgba(59, 107, 183, 0.7);
+  font-size: 1em;
+}
+
+.main-light h2, .main-light p {
+  margin-top: -5px !important;
+}
+
+.main-light p {
+  font-size: 25px;
+  margin-bottom: 30px !important;
+}
+
+.main-light button {
+  background: #96282B;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  -webkit-animation-name: up;
+          animation-name: up;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.main-light button:hover {
+  background: transparent;
+  color: #96282B;
+}
+
+.main-light button:before, .main-light button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #96282B;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.main-light button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.main-light button:hover:before, .main-light button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.main-light #light {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+.main-light #light:hover {
+  background: transparent;
+  color: rgba(59, 107, 183, 0.7);
+}
+
+.main-light #light:before, .main-light #light:after {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+.main-light .row {
+  margin-right: 0px !important;
+}
+
+.main-light #light:hover {
+  color: #87BFD7;
+}
+
+.fanArt-light {
+  padding-top: 5%;
+}
+
+.fanArt-light h3 {
+  font-size: 3em;
+  color: #20408D;
+  margin-bottom: 30px;
+}
+
+.fanArt-light h3 label {
+  border-bottom: 2px solid #012B53;
+  font-size: 1em;
+  color: #20408D;
+}
+
+.fanArt-light p {
+  margin: 20px 0px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.fanArt-light img {
+  border-radius: 5px;
+}
+
+.fanArt-light button {
+  background: #20408D;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+}
+
+.fanArt-light button:hover {
+  background: transparent;
+  color: #20408D;
+}
+
+.fanArt-light button:before, .fanArt-light button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #20408D;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.fanArt-light button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.fanArt-light button:hover:before, .fanArt-light button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.fanArt-light #lightFix {
+  background-color: #20408D !important;
+}
+
+.fanArt-light #lightFix:hover {
+  color: #20408D !important;
+}
+
+.fanArt-light #lightFix:before, .fanArt-light #lightFix:after {
+  background-color: #20408D !important;
+}
+
+.jediAcademy {
+  padding-top: 5%;
+}
+
+.jediAcademy h3 {
+  font-size: 3em;
+  color: #20408D;
+  margin-bottom: 30px;
+}
+
+.jediAcademy h3 label {
+  border-bottom: 2px solid #012B53;
+  font-size: 1em;
+  color: #20408D;
+}
+
+.jediAcademy p {
+  margin: 20px 0px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.jediAcademy img {
+  border-radius: 5px;
+}
+
+.jediAcademy button {
+  background: #20408D;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+}
+
+.jediAcademy button:hover {
+  background: transparent;
+  color: #20408D;
+}
+
+.jediAcademy button:before, .jediAcademy button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #20408D;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.jediAcademy button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.jediAcademy button:hover:before, .jediAcademy button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.jediAcademy #lightFix {
+  background-color: #20408D !important;
+}
+
+.jediAcademy #lightFix:hover {
+  color: #20408D !important;
+}
+
+.jediAcademy #lightFix:before, .jediAcademy #lightFix:after {
+  background-color: #20408D !important;
+}
+
+.sliderLight {
+  margin-bottom: 30px;
+}
+
+.sliderLight .indicator-item {
+  background-color: rgba(59, 107, 183, 0.7) !important;
+}
+
+.sliderLight .active {
+  background-color: #012B53 !important;
+}
+
+.sliderLight .prodTxt h3 {
+  font-size: 2em;
+}
+
+.sliderLight .prodTxt P {
+  font-size: 1.4em;
+}
+
+.sliderLight .prodTxt button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #20408D;
+  font-size: 1.3em;
+}
+
+.sliderLight .prodTxt button:hover {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+.sliderDark .prodTxt h3 {
+  font-size: 2em;
+}
+
+.sliderDark .prodTxt P {
+  font-size: 1.4em;
+}
+
+.sliderDark .prodTxt button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #760905;
+  font-size: 1.3em;
+}
+
+.sliderDark .prodTxt button:hover {
+  background-color: #96282B;
+}
+
+/*JEDI ACADEMY PAGE*/
+.JediAcademy {
+  /* label underline focus color */
+}
+
+.JediAcademy h1 {
+  font-size: 3em;
+  color: #20408D;
+  margin-bottom: 70px;
+}
+
+.JediAcademy h1 label {
+  border-bottom: 2px solid #012B53;
+  font-size: 1em;
+  color: #20408D;
+}
+
+.JediAcademy h2 {
+  font-size: 2em;
+}
+
+.JediAcademy h2 label {
+  border-bottom: 2px solid #012B53;
+  font-size: 1em;
+  color: #000;
+}
+
+.JediAcademy button {
+  background: #20408D;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+}
+
+.JediAcademy button:hover {
+  background: transparent;
+  color: #20408D;
+}
+
+.JediAcademy button:before, .JediAcademy button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #20408D;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.JediAcademy button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.JediAcademy button:hover:before, .JediAcademy button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.JediAcademy #lightFix {
+  background-color: #20408D !important;
+}
+
+.JediAcademy #lightFix:hover {
+  color: #20408D !important;
+}
+
+.JediAcademy #lightFix:before, .JediAcademy #lightFix:after {
+  background-color: #20408D !important;
+}
+
+.JediAcademy .input-field {
+  margin-top: -15px !important;
+}
+
+.JediAcademy .input-field input:focus {
+  border-bottom: 1px solid #20408D !important;
+  -webkit-box-shadow: 0 1px 0 0 #20408D !important;
+          box-shadow: 0 1px 0 0 #20408D !important;
+}
+
+.JediAcademy .input-field input:focus + label {
+  color: #20408D !important;
+}
+
+/*JEDI ACADEMY PAGE END*/
+/*PRODUCT LIGHT PAGE*/
+.bestSellingLight {
+  background-image: url("../images/light/wLight.jpg");
+}
+
+.bestSellingLight button {
+  background: #20408D;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+}
+
+.bestSellingLight button:hover {
+  background: transparent;
+  color: #20408D;
+}
+
+.bestSellingLight button:before, .bestSellingLight button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #20408D;
+  -webkit-transition: 400ms ease all;
+  transition: 400ms ease all;
+}
+
+.bestSellingLight button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.bestSellingLight button:hover:before, .bestSellingLight button:hover:after {
+  width: 100%;
+  -webkit-transition: 800ms ease all;
+  transition: 800ms ease all;
+}
+
+.bestSellingLight #lightFix {
+  background-color: #20408D !important;
+}
+
+.bestSellingLight #lightFix:hover {
+  color: #20408D !important;
+}
+
+.bestSellingLight #lightFix:before, .bestSellingLight #lightFix:after {
+  background-color: #20408D !important;
+}
+
+.productsLight h2 {
+  font-size: 3em;
+  color: #20408D;
+}
+
+.productsLight h2 label {
+  border-bottom: 2px solid #012B53;
+  font-size: 1em;
+  color: #20408D;
+}
+
+.productsLight .d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productsLight .align-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.productsLight .flex-centerY-centerX {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productsLight .wrapper {
+  height: 100%;
+}
+
+.productsLight .product .pageInner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.productsLight .wrapper {
+  width: 360px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  .productsLight .wrapper {
+    width: 100%;
+  }
+}
+
+.productsLight .wrapper:hover .hBg {
+  left: 0px;
+}
+
+.productsLight .wrapper:hover .price {
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #818181;
+}
+
+.productsLight .wrapper:hover .addToCart {
+  left: 50%;
+}
+
+.productsLight .wrapper:hover .img {
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+  opacity: 0.4;
+}
+
+.productsLight .wrapper:hover .infoInner {
+  bottom: 155px;
+}
+
+.productsLight .wrapper:hover .aSize {
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.productsLight .wrapper .boxDown {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.productsLight .wrapper .boxUp {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.productsLight .wrapper .img {
+  padding: 20px 0;
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+}
+
+.productsLight .hBg {
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  width: 660px;
+  height: 100%;
+  background-color: #96282B;
+  position: absolute;
+  left: -659px;
+}
+
+.productsLight .hBg .hBgInner {
+  width: 50%;
+  height: 100%;
+  background-color: #760905;
+}
+
+.productsLight .infoInner {
+  -webkit-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}
+
+.productsLight .infoInner .pName,
+.productsLight .infoInner .pCompany {
+  display: block;
+}
+
+.productsLight .infoInner .pName {
+  font-size: 18px;
+  color: #252525;
+}
+
+.productsLight .infoInner .pCompany {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8c8c8c;
+}
+
+.productsLight .aSize {
+  -webkit-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  color: #828282;
+  opacity: 0;
+}
+
+.productsLight .aSize .size {
+  color: #252525;
+}
+
+.productsLight .cart {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+}
+
+.productsLight .cart .price {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #252525;
+}
+
+.productsLight .cart .addToCart {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.productsLight .cart .addToCart .txt {
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.productsLight .hBg {
+  background-color: rgba(59, 107, 183, 0.7);
+}
+
+.productsLight .hBg .hBgInner {
+  background-color: #20408D;
+}
+
+/*PRODUCT LIGHT PAGE END*/
+/*FAN ART PAGE*/
+.FanArtLight h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.FanArtLight h1 label {
+  color: #760905;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.FanArtLight h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.FanArtLight h2 label {
+  color: #760905;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.FanArtLight h3 {
+  font-size: 3em;
+  color: #000;
+}
+
+.FanArtLight h3 label {
+  font-size: 1em;
+  color: #000;
+  border-bottom: 2px solid #012B53;
+}
+
+.FanArtLight p {
+  margin: 5% 0px 10px 0px;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.FanArtLight .fas {
+  font-size: 3em;
+  color: #20408D;
+  margin-top: 10px;
+}
+
+.FanArtLight .fas:hover {
+  color: #20408D;
+}
+
+.FanArtLight .bgColor {
+  background-image: url("../images/light/fanArtLight.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 10%;
+}
+
+.FanArtLight .zIindex {
+  z-index: 5;
+  margin: -60px 5px 0px 0px;
+}
+
+.FanArtLight .art {
+  margin-bottom: 30px;
+}
+
+.FanArtLight .art img {
+  border-radius: 5px !important;
+}
+
+.FanArtLight .modal {
+  height: auto;
+}
+
+.FanArtLight .modal p {
+  color: #000 !important;
+}
+
+.FanArtLight .modal .modal-content {
+  border: none;
+}
+
+.FanArtLight .modal .btnStyleLight {
+  background-color: #20408D !important;
+  color: #fff;
+}
+
+.FanArtLight .modal .btnStyleLight:hover {
+  background-color: rgba(59, 107, 183, 0.7) !important;
+}
+
+/*FAN ART PAGE END!!!*/
+.btn {
+  background-color: #760905 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.btn:hover {
+  color: #fff !important;
+}
+
+.btn-light {
+  background-color: #20408D !important;
+}
+
+/*FOOTER*/
+.page-footer-light {
+  background-color: #20408D;
+}
+
+.footer-copyright-light {
+  background-color: #012B53;
+  color: #fff;
+}
+
+.move {
+  margin-top: 10px;
+}
+
+/*FOOTER END*/
+/*LIGHT SIDE STRANA END*/
+/*ABOUT ME*/
+.aboutMeDark i {
+  color: #000 !important;
+  margin-bottom: 20px;
+}
+
+.aboutMeDark i:hover {
+  color: #760905 !important;
+}
+
+.aboutMeDark a {
+  color: #000;
+  font-size: 30px;
+}
+
+.aboutMeDark a:hover {
+  color: #760905;
+}
+
+.aboutMeDark span {
+  font-size: 35px;
+}
+
+.aboutMeLight i {
+  color: #000 !important;
+  margin-bottom: 20px;
+}
+
+.aboutMeLight i:hover {
+  color: #20408D !important;
+}
+
+.aboutMeLight a {
+  color: #000;
+  font-size: 30px;
+}
+
+.aboutMeLight a:hover {
+  color: #20408D;
+}
+
+.aboutMeLight span {
+  font-size: 35px;
+}
+
+/*ABOU ME END*/
+/*RESPONSIVE za Slider*/
+@media only screen and (max-width: 580px) {
+  .imgSize {
+    border-radius: 50% !important;
+  }
+}
+
+/*RESPONSIVE END*/
+/*# sourceMappingURL=style.css.map */

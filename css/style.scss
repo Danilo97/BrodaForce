@@ -1,0 +1,1033 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Inconsolata', monospace;
+}
+$redBrown:#2F0706;
+$blueDark:#012B53;
+$redDark:#760905;
+$blueLighter:#20408D;
+$redLight:#96282B;
+$blueLight:rgba(59, 107, 183, 0.7);
+$redPurple:#391320;
+$blueCyan:#87BFD7;
+@mixin underlineDark {
+    border-bottom:2px solid $redDark;
+}
+@mixin underlineLight {
+    border-bottom:2px solid $blueDark;
+}
+@mixin dugmeDark {
+    button{
+        background: $redDark;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        margin-bottom:20px;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+        border-radius: 2px;
+        font-weight: bold;
+        position: relative;
+      }
+      
+      button:hover{
+        background:transparent;
+        color: $redDark;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: $redDark;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+      #lightFix{
+        background-color: $blueLighter !important;
+    }
+    #lightFix:hover{
+      color: $blueLighter !important;
+    }
+    #lightFix:before,#lightFix:after{
+      background-color: $blueLighter !important;
+    }
+}
+@mixin dugmeLight {
+    button{
+        background: $blueLighter;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        margin-bottom:20px;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+        border-radius: 2px;
+        font-weight: bold;
+        position: relative;
+      }
+      
+      button:hover{
+        background:transparent;
+        color: $blueLighter;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: $blueLighter;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+      #lightFix{
+        background-color: $blueLighter !important;
+    }
+    #lightFix:hover{
+      color: $blueLighter !important;
+    }
+    #lightFix:before,#lightFix:after{
+      background-color: $blueLighter !important;
+    }
+}
+@mixin dugme{
+    button{
+        background: $redLight;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        margin-bottom:20px;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+        border-radius: 2px;
+        font-weight: bold;
+        animation-name: up;
+        animation-duration: 2s;
+        position: relative;
+      }
+      
+
+        @keyframes up {
+            from {opacity: 0; margin-top:200px;}
+            to {opacity: 1; margin-top:0px;}
+        }
+      button:hover{
+        background:transparent;
+        color: $redLight;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: $redLight;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+      #light{
+          background-color: $blueLight;
+      }
+      #light:hover{
+        background:transparent;
+        color: $blueLight;
+      }
+      #light:before,#light:after{
+        background-color: $blueLight;
+      }
+}
+@mixin product{
+      .d-flex {
+        display: flex !important;
+        justify-content: center;
+      }
+      .align-center {
+        align-items: center !important;
+      }
+      .flex-centerY-centerX {
+        justify-content: center;
+        align-items: center;
+      }
+      .wrapper {
+        height: 100%;
+        //display: table;
+      }
+      .product .pageInner {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .wrapper {
+        width: 360px;
+        padding: 15px;
+        background-color: #fff;
+      }
+      @media only screen and (max-width:480px){
+          .wrapper{
+              width:100%;
+          }
+      }
+      .wrapper:hover .hBg {
+        left: 0px;
+      }
+      .wrapper:hover .price {
+        left: 20px;
+        transform: translateY(-50%);
+        color: #818181;
+      }
+      .wrapper:hover .addToCart {
+        left: 50%;
+      }
+      .wrapper:hover .img {
+        filter: blur(7px);
+        opacity: 0.4;
+      }
+      .wrapper:hover .infoInner {
+        bottom: 155px;
+      }
+      .wrapper:hover .aSize {
+        transition-delay: 300ms;
+        bottom: 50px;
+        opacity: 1;
+      }
+      .wrapper .boxDown {
+        width: 100%;
+        height: 60px;
+        position: relative;
+        overflow: hidden;
+      }
+      .wrapper .boxUp {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+      .wrapper .img {
+        padding: 20px 0;
+        transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+      }
+      .hBg {
+        transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        width: 660px;
+        height: 100%;
+        background-color: $redLight;
+        position: absolute;
+        left: -659px;
+      }
+      .hBg .hBgInner {
+        width: 50%;
+        height: 100%;
+        background-color: $redDark;
+      }
+      .infoInner {
+        transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        position: absolute;
+        width: 100%;
+        bottom: 25px;
+      }
+      .infoInner .pName,
+      .infoInner .pCompany {
+        display: block;
+      }
+      .infoInner .pName {
+        font-size: 18px;
+        color: #252525;
+      }
+      .infoInner .pCompany {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #8c8c8c;
+      }
+      .aSize {
+        transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        position: absolute;
+        width: 100%;
+        bottom: -20px;
+        color: #828282;
+        opacity: 0;
+      }
+      .aSize .size {
+        color: #252525;
+      }
+      .cart {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+      }
+      .cart .price {
+        transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-delay: 100ms;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        color: #252525;
+      }
+      .cart .addToCart {
+        transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        transition-delay: 100ms;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 110%;
+        transform: translate(-50%, -50%);
+      }
+      .cart .addToCart .txt {
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 0.045em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+}
+html{
+    scroll-behavior: smooth;
+}
+.fab{
+    font-size: 30px;
+    margin-top:10px;
+    margin-right:10px;
+}
+/*ZA MAIN STRANU*/
+body{
+    
+
+    a {
+        text-decoration: none;
+        color:#FFF;
+    }
+    a:hover{
+        text-decoration: none;
+        color:#FFF;
+    }
+}
+#ChooseSide{
+        background-image: url("../images/background2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+
+        h1{
+            color:#fff;
+            font-weight: bold;
+            margin-top:200px;
+        }
+        h2 {
+            color:#fff;
+            margin-bottom:50px;
+        }
+        .row{
+            margin-right: 0px !important;
+            @include dugme; 
+        }
+}
+/*ZA MAIN STRANU END*/
+
+/*DARK SIDE STRANA*/
+.sidenavDark{
+    background-color: $redBrown !important;
+    li {
+        a{
+            color:#fff !important;
+            font-size:17px !important;
+        }
+    }
+}
+.brand-logo{
+    margin-left:20px !important;
+}
+.nav-wrapper {
+    background-color:$redBrown;
+}
+    .main{
+        background-image: url("../images/dark/main.jpg");
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        color:#fff;
+        padding-top:50px;
+        h1{
+            margin-top:60px;
+            font-size:4em;
+            font-weight: bold;
+            label{
+                color:$redDark;
+                font-size:1em;
+            }
+        }
+        h2,p{
+            margin-top:-5px !important;
+        }
+        p{
+            font-size:25px;
+            margin-bottom:30px !important;
+        }
+        @include dugme;
+        .row{
+            margin-right:0px !important;
+        }
+}
+.fanArt{
+
+    padding-top:5%;
+    h3{
+        font-size: 3em;
+        color:$redPurple;
+        margin-bottom:30px;
+        label{
+            @include underlineDark();
+            font-size: 1em;
+            color:$redPurple;
+        }
+    }
+    p{
+        margin:20px 0px;
+        font-size:1.3em;
+        font-weight: 600;
+    }
+    img{
+        border-radius:5px;
+    }
+    @include dugmeDark;
+}
+.sithAcademy{
+    padding-top:5%;
+    h3{
+        font-size: 3em;
+        color:$redPurple;
+        margin-bottom:30px;
+        label{
+            @include underlineDark();
+            font-size: 1em;
+            color:$redPurple;
+        }
+    }
+    p{
+        margin:20px 0px;
+        font-size:1.3em;
+        font-weight: 600;
+    }
+    img{
+        border-radius:5px;
+    }
+    @include dugmeDark;
+}
+
+.sliderDark{
+    margin-bottom:30px;
+    .indicator-item{
+        background-color: $redLight !important;
+    }
+    .active{
+        background-color: $redPurple !important;
+    }
+}
+/*FOOTER*/
+.page-footer{
+    background-color: $redDark !important;
+}
+.footer-copyright {
+    background-color: $redBrown !important;
+}
+/*FOOTER END*/
+/*SITH ACADEMY PAGE*/
+    .sithAcademy{
+        h1{
+            font-size: 3em;
+            color:$redPurple;
+            margin-bottom:70px;
+            label{
+                @include underlineDark;
+                font-size: 1em;
+                color:$redPurple;
+            }
+        }
+        h2{
+            font-size: 2em;
+            
+            
+            label{
+                @include underlineDark;
+                font-size: 1em;
+                color:#000;
+            }
+        }
+        
+        .input-field{
+            margin-top:-15px !important;
+        }
+        /* label underline focus color */
+        .input-field input:focus {
+            border-bottom: 1px solid $redDark !important;
+            box-shadow: 0 1px 0 0 $redDark !important;
+        }
+        .input-field input:focus + label {
+            color: $redDark !important;
+          }
+    }
+/*SITH ACADEMY PAGE END*/
+/*SITH PRODUCTS PAGE*/
+    .bestSelling {
+        //background-color: $redPurple;
+        background-image: url("../images/dark/wDark.jpg");
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:#fff;
+        min-height:91vh; 
+        padding-top:5%;
+        @include dugmeDark;
+        button:hover{
+            color:#fff;
+        }
+        .imgPosition{
+            padding-left:5%;
+        }
+        .textPosition{
+            margin-top:5%;
+            padding-right:5%;
+        }
+    }
+    .products{
+        h2{
+
+        font-size:3em;
+        color:$redPurple;
+        label {
+            @include underlineDark();
+            font-size:1em;
+            color:$redPurple;
+        }
+        }
+        @include product;
+    }
+/*SITH PRODUCTS PAGE END*/
+/*FAN ART PAGE*/
+.FanArt{
+    h1{
+        font-size: 3em;
+        margin-bottom:10px;
+        color:#fff;
+        font-weight: bold;
+        label{
+            color:$redDark;
+            font-size:1em;
+            font-weight: bold;
+        }
+    }
+    h2{
+        font-size: 2em;
+        margin-bottom:10px;
+        color:#fff;
+        font-weight: bold;
+        label{
+            color:$redDark;
+            font-size:1em;
+            font-weight: bold;
+        }
+    }
+    h3{
+        font-size:3em;
+        color:#000;
+        label{
+            font-size:1em;
+            color:#000;
+            @include underlineDark();
+        }
+    }
+    p{
+        margin:5% 0px 10px 0px;
+        color:#fff;
+        font-size:1.3em;
+        
+        
+    }
+    .fas {
+        font-size: 3em;
+        color:$redDark;
+        margin-top:10px;
+    }
+    .fas:hover{
+        color:$redLight;
+    }
+    .bgColor{
+        background-image: url("../images/dark/fanBg.jpg");
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        padding-top:10%;
+    }
+    .zIindex{
+        z-index:5;
+        margin:-60px 5px 0px 0px;
+    }
+    .art{
+        margin-bottom:30px;
+        img{
+            border-radius: 5px !important;
+        }
+    }
+    //ZA MODAL DESING!!!
+    .modal{
+        height: auto;
+        p{
+            color:#000 !important;
+        }
+        .btnStyle{
+            background-color: $redBrown !important;
+            color:#fff;
+        }
+        .modal-content{
+            border:none;
+        }
+        .btnStyle:hover{
+            background-color: $redDark !important;
+        }
+        .far:hover{
+            color:$redDark;
+        }
+    }
+    
+}
+/*FAN ART PAGE END*/
+/*DARK SIDE STRANA END*/
+
+/*LIGHT SIDE STRANA*/
+.sidenavLight{
+    background-color: $blueLighter !important;
+    li {
+        a{
+            color:#fff !important;
+            font-size:17px !important;
+        }
+    }
+}
+.wrap-color{
+    background-color: #3B6BB7 !important;
+}
+.main-light{
+    background-image: url("../images/light/mainImg.jpg");
+    background-position: center;
+    h1{
+        margin-top:60px;
+        font-size:4em;
+        font-weight: bold;
+        label{
+            color:$blueLight;
+            font-size:1em;
+        }
+    }
+    h2,p{
+        margin-top:-5px !important;
+    }
+    p{
+        font-size:25px;
+        margin-bottom:30px !important;
+    }
+    @include dugme;
+    .row{
+        margin-right:0px !important;
+    }
+    #light:hover{
+        color:$blueCyan;
+    }
+}
+//FAN ART LIGHT
+.fanArt-light{
+    padding-top:5%;
+    h3{
+        font-size: 3em;
+        color:$blueLighter;
+        margin-bottom:30px;
+        label{
+            @include underlineLight();
+            font-size: 1em;
+            color:$blueLighter;
+        }
+    }
+    p{
+        margin:20px 0px;
+        font-size:1.3em;
+        font-weight: 600;
+    }
+    img{
+        border-radius:5px;
+    }
+    @include dugmeLight;
+}
+//FAN ART LIGHT END!!!
+//JEDI ACADEMY
+.jediAcademy{
+    padding-top:5%;
+    h3{
+        font-size: 3em;
+        color:$blueLighter;
+        margin-bottom:30px;
+        label{
+            @include underlineLight();
+            font-size: 1em;
+            color:$blueLighter;
+        }
+    }
+    p{
+        margin:20px 0px;
+        font-size:1.3em;
+        font-weight: 600;
+    }
+    img{
+        border-radius:5px;
+    }
+    @include dugmeLight();
+}
+
+//JEDI ACADEMY END!!!
+//CAROUSEL
+.sliderLight{
+    margin-bottom:30px;
+    .indicator-item{
+        background-color: $blueLight !important;
+    }
+    .active{
+        background-color: $blueDark !important;
+    }
+    .prodTxt{
+        h3{
+            font-size:2em;
+        }
+        P{
+            font-size: 1.4em;
+        }
+        button{
+            padding:10px 40px;
+            border-radius:5px;
+            border:none;
+            color:#fff;
+            background-color: $blueLighter;
+            font-size: 1.3em;
+        }
+        button:hover{
+            background-color: $blueLight;
+        }
+    }
+}
+.sliderDark{
+    .prodTxt{
+        h3{
+            font-size:2em;
+        }
+        P{
+            font-size: 1.4em;
+        }
+        button{
+            padding:10px 40px;
+            border-radius:5px;
+            border:none;
+            color:#fff;
+            background-color: $redDark;
+            font-size: 1.3em;
+        }
+        button:hover{
+            background-color: $redLight;
+        }
+    }
+}
+//CAROUSEL END!!!
+/*JEDI ACADEMY PAGE*/
+.JediAcademy{
+    
+    h1{
+        font-size: 3em;
+        color:$blueLighter;
+        margin-bottom:70px;
+        label{
+            @include underlineLight();
+            font-size: 1em;
+            color:$blueLighter;
+        }
+    }
+    h2{
+        font-size: 2em;
+        
+        
+        label{
+            @include underlineLight();
+            font-size: 1em;
+            color:#000;
+        }
+    }
+    p{}
+    @include dugmeLight();
+    
+    .input-field{
+        margin-top:-15px !important;
+    }
+    /* label underline focus color */
+    .input-field input:focus {
+        border-bottom: 1px solid $blueLighter !important;
+        box-shadow: 0 1px 0 0 $blueLighter !important;
+    }
+    .input-field input:focus + label {
+        color: $blueLighter !important;
+      }
+}
+/*JEDI ACADEMY PAGE END*/
+/*PRODUCT LIGHT PAGE*/
+.bestSellingLight{
+    @include dugmeLight();
+    background-image: url("../images/light/wLight.jpg");
+}
+.productsLight{
+    h2{
+
+    font-size:3em;
+    color:$blueLighter;
+    label {
+        @include underlineLight();
+        font-size:1em;
+        color:$blueLighter;
+    }
+    }
+    @include product;
+    .hBg{
+        background-color: $blueLight;
+    }
+    .hBg .hBgInner{
+        background-color: $blueLighter;
+    }
+}
+/*PRODUCT LIGHT PAGE END*/
+/*FAN ART PAGE*/
+.FanArtLight{
+    h1{
+        font-size: 3em;
+        margin-bottom:10px;
+        color:#fff;
+        font-weight: bold;
+        label{
+            color:$redDark;
+            font-size:1em;
+            font-weight: bold;
+        }
+    }
+    h2{
+        font-size: 2em;
+        margin-bottom:10px;
+        color:#fff;
+        font-weight: bold;
+        label{
+            color:$redDark;
+            font-size:1em;
+            font-weight: bold;
+        }
+    }
+    h3{
+        font-size:3em;
+        color:#000;
+        label{
+            font-size:1em;
+            color:#000;
+            @include underlineLight();
+        }
+    }
+    p{
+        margin:5% 0px 10px 0px;
+        color:#fff;
+        font-size:1.3em;
+    }
+    .fas {
+        font-size: 3em;
+        color:$blueLighter;
+        margin-top:10px;
+    }
+    .fas:hover{
+        color:$blueLighter;
+    }
+    .bgColor{
+        background-image: url("../images/light/fanArtLight.jpg");
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        padding-top:10%;
+    }
+    .zIindex{
+        z-index:5;
+        margin:-60px 5px 0px 0px;
+    }
+    .art{
+        margin-bottom:30px;
+        img{
+            border-radius: 5px !important;
+        }
+    }
+    //ZA MODAL DESING!!!
+    .modal{
+        height: auto;
+        p{
+            color:#000 !important;
+        }
+        .modal-content{
+            border:none;
+        }
+        .btnStyleLight{
+            background-color: $blueLighter !important;
+            color:#fff;
+        }
+        .btnStyleLight:hover{
+            background-color: $blueLight !important;
+        }
+    }
+    
+}
+
+/*FAN ART PAGE END!!!*/
+.btn {
+    background-color: $redDark !important;
+    color:#fff !important;
+    border:none !important;
+}
+.btn:hover{
+    color:#fff !important;
+}
+.btn-light{
+    background-color: $blueLighter !important;
+}
+/*FOOTER*/
+.page-footer-light{
+    background-color: $blueLighter;
+}
+.footer-copyright-light{
+    background-color:$blueDark;
+    color:#fff;
+}
+
+
+.move{margin-top:10px;}
+/*FOOTER END*/
+/*LIGHT SIDE STRANA END*/
+/*ABOUT ME*/
+.aboutMeDark{
+    i{
+        color:#000 !important;
+        margin-bottom:20px;
+    }
+    i:hover{
+        color:$redDark !important;
+    }
+    a{
+        color:#000;
+        font-size:30px;
+    }
+    a:hover{
+        color:$redDark;
+    }
+    span{
+        font-size:35px;
+    }
+}
+.aboutMeLight{
+    i{
+        color:#000 !important;
+        margin-bottom:20px;
+    }
+    i:hover{
+        color:$blueLighter !important;
+    }
+    a{
+        color:#000;
+        font-size:30px;
+    }
+    a:hover{
+        color:$blueLighter;
+    }
+    span{
+        font-size:35px;
+    }
+}
+/*ABOU ME END*/
+/*RESPONSIVE za Slider*/
+@media only screen and (max-width:580px){
+    .imgSize{
+        border-radius: 50% !important;
+    }
+}
+
+
+/*RESPONSIVE END*/
